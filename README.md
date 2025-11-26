@@ -1,16 +1,71 @@
-# React + Vite
+# React Todo List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+シンプルで使いやすいTodoリストアプリケーションです。React + Viteで構築されています。
 
-Currently, two official plugins are available:
+## 機能
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ タスクの追加
+- ✅ タスクの削除
+- ✅ タスクの完了/未完了の切り替え
+- ✅ Enterキーでの素早い追加
+- ✅ レスポンシブデザイン
+- ✅ モダンでクリーンなUI
 
-## React Compiler
+## セットアップ
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 必要な環境
 
-## Expanding the ESLint configuration
+- Node.js (v14以上)
+- npm または yarn
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### インストール
+
+1. リポジトリをクローン
+```bash
+git clone https://github.com/rhapsody0919/react-todo-list.git
+cd react-todo-list
+```
+
+2. 依存関係をインストール
+```bash
+npm install
+```
+
+3. 開発サーバーを起動
+```bash
+npm run dev
+```
+
+ブラウザで http://localhost:5173/ を開いてアプリを確認できます。
+
+## ビルド
+
+本番環境用にビルドする場合：
+```bash
+npm run build
+```
+
+ビルドしたファイルは `dist` フォルダに生成されます。
+
+## 技術スタック
+
+- **React** - UIライブラリ
+- **Vite** - 高速なビルドツール
+- **CSS** - スタイリング
+
+## プロジェクト構造
+
+```
+react-todo-list/
+├── src/
+│   ├── App.jsx       # メインコンポーネント
+│   ├── App.css       # スタイル
+│   ├── main.jsx      # エントリーポイント
+│   └── index.css     # グローバルスタイル
+├── public/           # 静的ファイル
+└── package.json      # 依存関係
+```
+
+## ライセンス
+
+MIT
